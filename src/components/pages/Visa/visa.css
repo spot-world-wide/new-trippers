@@ -1,0 +1,284 @@
+.small-nav {
+  background-color: #445d93;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: aliceblue;
+  padding: 4px 0;
+}
+
+.visa-container {
+  background-image: url("https://images.unsplash.com/photo-1484821582734-6c6c9f99a672?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1033&q=80");
+  height: 500px;
+  background-size: cover;
+  color: rgb(240, 240, 240);
+  width: 100%;
+  position: relative;
+}
+
+.visa-bottom-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 5px 10px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.visa-bottom-nav ul a:hover {
+  background-color: #445d93;
+  padding: 5px 10px;
+
+  color: white;
+  transition: ease-in-out 0.1s;
+}
+.visa-bottom-nav li {
+  padding: 10px;
+}
+
+.visa-trippers-logo {
+  width: 80px;
+}
+
+.visa-search {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 85px;
+}
+
+.visa-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visa-input input {
+  padding: 10px 10px;
+  background-color: white;
+  opacity: 0.6;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 30rem;
+  color: black;
+  font-weight: 550;
+}
+
+.visa-input a {
+  padding: 9px 0;
+  background-color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 4rem;
+  text-align: center;
+  color: black;
+}
+.visa-btn {
+  padding: 12.5px 0;
+  background-color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 4rem;
+  text-align: center;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.visa-list-container {
+  background-color: rgb(255, 255, 255);
+  color: #445d93;
+  height: 200px; /* Set a fixed height for the container */
+  overflow-y: scroll;
+  margin-top: 5px;
+  padding: 6px 10px;
+  width: 20rem;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  cursor: pointer;
+}
+
+.visa-list-container li:hover {
+  background-color: #d4d5d9;
+  padding: 2px 2px;
+}
+
+/* visa article */
+
+.visa-article {
+  padding: 1rem;
+}
+
+.packages-details {
+  background-color: #ffffff;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  width: 170px;
+  height: 170px;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.packages-details:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.visa-destination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.color-line {
+  width: 170px;
+}
+.visa-footer {
+  background-color: #445d93;
+  width: 100%;
+  height: 15rem;
+}
+.visa-address {
+  background-color: #ffffff;
+  width: 300px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.from2 {
+  position: relative;
+}
+
+/*   mobile media screen */
+
+@media only screen and (max-width: 320px) {
+  .visa-bottom-nav ul {
+    gap: 1rem;
+    padding: 0 20px;
+  }
+
+  .visa h1 {
+    font-size: 10px;
+  }
+
+  .visa-p h1 {
+    font-size: 15px !important;
+  }
+
+  .visa-input {
+    width: 20px;
+  }
+
+  .visa-input a {
+    width: 7rem;
+    padding: 9px 10px;
+  }
+  .visa-trippers-logo {
+    width: 90px;
+  }
+
+  .visa-destination {
+    flex-wrap: wrap;
+  }
+
+  .visa-search {
+    padding: 0 1rem;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+/*  */
+
+@media only screen and (max-width: 435px) {
+  .visa-bottom-nav {
+    padding: 0 10px;
+  }
+
+  .visa-bottom-nav ul {
+    gap: 1rem;
+    padding: 0 20px;
+  }
+
+  .visa h1 {
+    font-size: 16px;
+  }
+
+  .visa-p h1 {
+    font-size: 10px;
+  }
+
+  .visa-input {
+    width: 20px;
+  }
+
+  .visa-input a {
+    width: 7rem;
+    padding: 9px 10px;
+  }
+  .visa-trippers-logo {
+    width: 90px;
+  }
+
+  .visa-destination {
+    flex-wrap: wrap;
+  }
+  .visa-search {
+    padding: 0 1rem;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+/* tablet media screen */
+
+@media only screen and (max-width: 768px) {
+  .visa-bottom-nav ul {
+    gap: 1.1rem;
+    padding: 0 20px;
+  }
+
+  .visa h1 {
+    font-size: 10px;
+  }
+
+  .visa-p h1 {
+    font-size: 30px;
+  }
+
+  .visa-input {
+    width: 20px;
+  }
+
+  .visa-input a {
+    width: 7rem;
+    padding: 9px 10px;
+  }
+
+  .visa-trippers-logo {
+    width: 100px;
+  }
+
+  .visa-destination {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .small-nav {
+    padding: 4px 0;
+  }
+
+  .small-nav p {
+    font-size: 16px;
+  }
+}

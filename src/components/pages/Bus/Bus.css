@@ -1,0 +1,164 @@
+.main-header {
+  width: 100%;
+}
+
+.bus-top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(228, 224, 227);
+  width: 100%;
+}
+.bus-logo {
+  width:150px;
+}
+.bottom-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 5px 10px;
+  background-color: rgb(215, 214, 212);
+  cursor: pointer;
+}
+
+.bottom-nav li {
+  padding: 10px;
+}
+
+.bottom-nav ul :hover {
+  background-color: rgb(140, 5, 5);
+  color: white;
+}
+
+.bus-ticket-booking {
+  margin: 0rem 1rem;
+  display: flex;
+}
+
+.bus-line {
+  width: 97%;
+  border-bottom: 5px solid #960606;
+  padding-left: 3%;
+  padding-bottom: 10px;
+}
+
+.bus-box {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.heading h1 {
+  color: #0068b4;
+  font-size: 25px;
+}
+.bus-from {
+  border: 1px solid grey;
+  padding: 10px;
+  width: 270px;
+}
+
+.bus-left-card {
+  background-color: #ffff;
+  padding: 2rem;
+  margin-left: 6rem;
+}
+
+.bus-departs {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.bus-btn {
+  background-color: rgb(16, 149, 16);
+  color: #fffcfc;
+  border: none;
+  padding: 3px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bus-right-card {
+  padding: 2rem 1rem;
+}
+.bus-footer {
+  padding: 1rem 2rem;
+  font-size: 12px;
+}
+
+/* mobile screen */
+
+@media screen and (max-width: 320px) {
+  .bus-logo {
+    width: 120px;
+  }
+
+  .bus-left-card {
+    padding: 10px;
+    margin-left: 5px;
+  }
+  .heading h1 {
+    color: #0068b4;
+    font-size: 15px;
+  }
+  .bottom-nav ul {
+    gap: 1rem;
+    padding: 3px 8px;
+  }
+
+  .bus-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  .bus-btn {
+    padding: 1px 2px;
+    font-size: 10px;
+  }
+  .bus-right-card {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .bus-logo {
+    width: 130px;
+  }
+  .heading h1 {
+    color: #0068b4;
+    font-size: 20px;
+  }
+  .bus-right-card {
+    display: none;
+  }
+  .bus-left-card {
+    padding: 10px;
+    margin-left: 5px;
+  }
+  .bottom-nav ul {
+    gap: 1.1rem;
+    padding: 4px 9px;
+  }
+  .bus-box {
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bus-logo {
+    width: 140px;
+  }
+  .heading h1 {
+    color: #0068b4;
+    font-size: 22px;
+  }
+  .bus-right-card {
+    display: none;
+  }
+}

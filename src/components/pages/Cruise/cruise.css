@@ -1,0 +1,155 @@
+.cruise-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: auto;
+}
+
+.cruise-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(27, 27, 73);
+  color: aliceblue;
+  height: 4rem;
+  padding: 0 10px;
+}
+.cruise-trippers-logo {
+  width: 80px;
+}
+
+.cruise-right {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+.call-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.right p {
+  text-align: center;
+}
+
+.cruise-menu-container {
+  background-image: url("https://images.unsplash.com/photo-1583157048761-ac1dba033233?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y3J1aXNlfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=600&q=60");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cruise-location {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.Cruise-location-list {
+  gap: 25px;
+}
+
+select {
+  border: none;
+  outline: none; /* optional */
+  background-color: transparent;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+@media only screen and (max-width: 320px) {
+  /* .hotel-header {
+    height: 35rem !important;
+  } */
+
+  /* .Hotel-search {
+    height: 30rem !important;
+  } */
+
+  /* .hotel-qty-card {
+    height: 12rem;
+  } */
+  .cruise-menu-container {
+    height: 24rem;
+  }
+  .cruise-header {
+    height: 3rem;
+    padding: 10px 10px;
+  }
+  .cruise-menu {
+    margin-right: 30px;
+    gap: 3rem;
+  }
+  .cruise-menu :link:nth-child(4),
+  .cruise-menu :link:nth-child(5),
+  .cruise-menu :link:nth-child(6),
+  .cruise-menu :link:nth-child(8) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  /* .hotel-header {
+    height: 35rem !important;
+  } */
+
+  /* .Hotel-search {
+    height: 30rem !important;
+  } */
+
+  /* .hotel-qty-card {
+    height: 12rem;
+  } */
+  .cruise-menu-container {
+    height: 20rem;
+  }
+
+  .cruise-header {
+    height: 3rem;
+  }
+  .cruise-menu {
+    margin-right: 30px;
+    gap: 3rem;
+  }
+  .cruise-menu :link:nth-child(4),
+  .cruise-menu :link:nth-child(5),
+  .cruise-menu :link:nth-child(6),
+  .cruise-menu :link:nth-child(8) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* .hotel-header {
+    height: 35rem !important;
+  } */
+
+  /* .Hotel-search {
+    height: 30rem !important;
+  } */
+
+  /* .hotel-qty-card {
+    height: 12rem;
+  } */
+  .cruise-header {
+    height: 3rem;
+    padding: 10px 10px;
+  }
+  .cruise-menu {
+    margin-right: 30px;
+    gap: 3.2rem;
+  }
+  .cruise-menu :link:nth-child(6),
+  .cruise-menu :link:nth-child(8) {
+    display: none;
+  }
+}

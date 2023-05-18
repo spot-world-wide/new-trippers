@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Carlito&display=swap");
+
+.Maldives-menu-container {
+  width: 100vw;
+  height: 50px;
+  background-image: linear-gradient(
+    to right top,
+    #211a29,
+    #1e1a29,
+    #1b1a29,
+    #181928,
+    #151928,
+    #131c2b,
+    #111f2e,
+    #0e2230,
+    #0d2935,
+    #0e3139,
+    #14383b,
+    #1c3f3d
+  );
+  color: white;
+  padding: 20px;
+}
+
+.maldives-package-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+.package-details-container {
+  font-family: "Carlito", sans-serif;
+  width: 50%;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+.package-images {
+  width: 50%;
+}
+.package-img {
+  width: 600px;
+}
+.popular-container {
+  padding: 20px;
+}
+.popular-img {
+  width: 300px;
+}
+
+.popular-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}

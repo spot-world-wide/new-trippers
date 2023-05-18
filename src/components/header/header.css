@@ -1,0 +1,732 @@
+img {
+  width: 60px;
+}
+
+input {
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  background: none;
+}
+
+input[type="date"] {
+  font-size: 16px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 30px;
+}
+
+.airport-search {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.airport-code {
+  background-color: black;
+  color: #ffffff;
+  padding: 1px 2px;
+}
+.left-container {
+  display: flex;
+  gap: 5px;
+}
+
+.trippers-logo {
+  width: 160px;
+}
+
+/* main header */
+.header-main {
+  width: 100%;
+  background-image: url("https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg");
+  background-size: cover;
+  -webkit-animation: slidein 100s;
+  animation: slidein 100s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  padding: 0 10px;
+}
+
+/* top header */
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  gap: 55rem;
+  width: 100%;
+  height: 80px;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+
+@keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(75, 75, 250, 0.3);
+  border-radius: 3px;
+}
+
+.title {
+  font-size: 16px;
+}
+.p-line {
+  font-style: italic;
+  font-size: 10px;
+}
+
+.ul-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.ul-list li button {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #22364c;
+  color: aliceblue;
+  cursor: pointer;
+  border: 1px solid #314a64;
+}
+
+.login-btn {
+  background-color: rgb(127, 11, 11);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flight-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: auto;
+}
+
+.menu-list {
+  transition: transform 0.2s ease-out;
+  z-index: 1;
+}
+
+.menu-list:hover {
+  transform: translateY(-10px);
+}
+
+.menu-li:hover {
+  background-color: #333;
+  border-radius: 15px;
+}
+
+.active-icon {
+  background-color: rgb(53, 46, 52) !important;
+  color: white !important;
+}
+.card {
+  color: black;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 6rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.card-info:hover {
+  color: #fff;
+}
+
+/* form */
+
+.flight-form {
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 10px;
+}
+
+.flight-form p {
+  font-size: 18px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 20px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+select {
+  width: 140px;
+}
+
+.from-to-container {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  flex-direction: row;
+}
+
+.flight-search {
+  background: rgba(255, 254, 254, 0.463);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 94%;
+  margin: auto;
+  border-radius: 10px;
+  position: relative;
+  bottom: 20px; /* adjust the top position as needed */
+  z-index: 0;
+}
+
+.left {
+  display: flex;
+  padding: 16px 0;
+  gap: 10px;
+}
+.radio-btn {
+  display: flex;
+  color: black;
+  gap: 5px;
+}
+
+.right p {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
+
+/* location */
+
+.from {
+  display: flex;
+}
+.location {
+  width: 100%;
+  padding: 1rem;
+  color: black;
+}
+.location-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.from-location {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 5px 10px;
+}
+
+.airport-names {
+  position: absolute;
+  top: 30px;
+  right: unset;
+  width: 340px;
+  height: 15rem;
+  background-color: #ffffff;
+  z-index: 101;
+  padding: 10px 0;
+  border: 1px solid rgb(187, 172, 172);
+}
+
+.airport-names-to {
+  position: absolute;
+  top: 30px;
+  right: unset;
+  width: 340px;
+  height: 250px;
+  background-color: #ffffff;
+  z-index: 101;
+  padding: 10px 0;
+  border: 1px solid rgb(187, 172, 172);
+}
+
+.airport-names ul {
+  height: 200px; /* set the height of the list */
+  overflow-y: scroll; /* always show a scrollbar */
+}
+
+.airport-names li {
+  padding: 10px 15px;
+}
+
+.airport-names li:hover {
+  background-color: rgb(210, 216, 219);
+}
+.from-location2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  font-size: 20px;
+  top: 30px;
+}
+
+.arrow-icon {
+  position: absolute;
+  left: 20px;
+  background-color: rgb(250, 255, 255);
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.vertical-line {
+  border: 1px solid rgb(231, 225, 225);
+  height: 5rem;
+}
+
+.from2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+hr {
+  border: 0.5px solid rgb(231, 225, 225);
+}
+.vertical-line2 {
+  border: 1px solid rgb(231, 225, 225);
+  height: 5rem;
+}
+
+.btn {
+  padding: 1rem;
+  margin-left: 2.5rem;
+  cursor: pointer;
+  background-color: rgb(199, 25, 25);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* flight animation */
+
+#flight {
+  position: relative;
+}
+
+#flight img {
+  position: absolute;
+  top: 0;
+  left: -200px;
+}
+
+.flight.moved img {
+  animation: move-flight 2s forwards;
+}
+
+@keyframes move-flight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(400%);
+  }
+}
+
+/* qty card */
+
+.qty-card {
+  background-color: white;
+  position: absolute;
+  top: 20px;
+  width: 12rem;
+  height: 16rem;
+  z-index: 101;
+  padding: 1rem 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.qty-card button:hover {
+  background-color: red;
+  color: white;
+}
+.qty-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qty-btn button {
+  border: none;
+}
+
+.qty-apply-btn {
+  border: none;
+  background-color: rgb(192, 40, 40);
+  color: #fff;
+  border-radius: 5px;
+  width: 60px;
+  padding: 5px;
+  cursor: pointer;
+}
+.adults {
+  display: flex;
+  justify-content: space-around;
+}
+
+.class-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* last */
+
+.form3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  padding: 16px 1rem;
+}
+
+.circle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.covid-p {
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0% {
+    color: black;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: black;
+  }
+}
+
+/* login card */
+.login-card {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 101;
+  font-family: "Inter", sans-serif;
+}
+
+.card-content {
+  width: 40%;
+  background-color: white;
+  padding: 20px;
+  position: relative;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.input-field input {
+  border: 1px solid rgb(187, 22, 22);
+  padding: 5px 5px;
+  border-radius: 3px;
+}
+
+.btn-login {
+  border: none;
+  margin-top: 1rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: rgb(172, 25, 25);
+  color: #fff;
+  cursor: pointer;
+}
+
+.login-cancel-btn {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  cursor: pointer;
+}
+
+/* media screen */
+
+@media only screen and (max-width: 320px) {
+  .header-main {
+    padding: 0;
+    width: 100%;
+  }
+
+  .left-container {
+    gap: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .flight-menu {
+    gap: 3.5rem;
+    margin-right: 72px;
+  }
+  .flight-menu :link:nth-child(4),
+  .flight-menu :link:nth-child(5),
+  .flight-menu :link:nth-child(6),
+  .flight-menu :link:nth-child(8) {
+    display: none;
+  }
+
+  /* .airport-names {
+  position: absolute;
+  top: 30px;
+  right: unset;
+  width: 340px;
+  height: auto;
+  background-color: #ffffff;
+  z-index: 101;
+  padding: 10px 0;
+  border: 1px solid rgb(187, 172, 172);
+} */
+
+  .airport-names {
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 220px;
+  }
+
+  .airport-names-to {
+    top: 0;
+    width: 220px;
+    right: 16px;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .header-main {
+    padding: 0;
+    width: 100%;
+  }
+
+  .left-container {
+    gap: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .flight-menu {
+    gap: 3.5rem;
+    margin-right: 72px;
+  }
+
+  .flight-menu :link:nth-child(5),
+  .flight-menu :link:nth-child(6),
+  .flight-menu :link:nth-child(8) {
+    display: none;
+  }
+
+  .airport-names {
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 235px;
+  }
+  .airport-names-to {
+    top: 0;
+    width: 220px;
+    right: 16px;
+  }
+}
+
+/* tablet screen */
+@media only screen and (max-width: 768px) {
+  .ul-list {
+    display: none;
+  }
+  .header-main {
+    width: 100%;
+    padding: 0.3rem;
+  }
+  .left-container {
+    gap: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .card {
+    width: 4rem;
+    padding: 0.5rem;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+  .radio-btn {
+    gap: 3px;
+  }
+  .location {
+    font-size: 14px;
+  }
+  .icons {
+    gap: 5px;
+  }
+  .btn {
+    padding: 1rem;
+    margin-left: 1rem;
+  }
+  .circle-icon {
+    gap: 5px;
+  }
+  .img {
+    width: 40px;
+  }
+  .menu-list {
+    width: 1rem;
+  }
+
+  .flight-menu {
+    gap: 3.5rem;
+    margin-left: 30px;
+  }
+
+  .main-container {
+    display: flex;
+    margin: auto;
+  }
+
+  .flight-search {
+    margin: auto;
+    width: 90%;
+  }
+  .left {
+    display: flex;
+    padding: 2rem;
+    gap: 18px;
+  }
+
+  .left p {
+    font-size: 15px;
+  }
+
+  .left input {
+    display: none;
+  }
+
+  .right p {
+    display: none;
+  }
+
+  .form3 div:nth-child(1) {
+    display: none;
+  }
+
+  .location-list {
+    flex-wrap: wrap;
+  }
+
+  .icons a:nth-child(1) {
+    display: none;
+  }
+
+  .arrow-icon {
+    left: -6px;
+  }
+
+  .from-location p {
+    font-size: 12px;
+  }
+  .from2 .vertical-line2 {
+    display: none;
+  }
+
+  .from-location2 button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .qty-card {
+    width: 10rem;
+  }
+}

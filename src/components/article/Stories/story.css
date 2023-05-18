@@ -1,0 +1,23 @@
+.Storys__container {
+  margin: 0rem 4rem;
+}
+.storys__container-title {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.storys__container-title span {
+  font-weight: 600;
+}
+.storys__container-content {
+  margin-top: 1rem;
+}
+.storys__container-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  gap: 1.7rem;
+}

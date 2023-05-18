@@ -1,0 +1,153 @@
+/* hotel booking */
+
+.hotel-header {
+  height: 25rem;
+}
+
+.hotel-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: auto;
+}
+
+.hotel-menu .menu-list {
+  transition: transform 0.2s ease-out;
+  z-index: 1;
+}
+
+.hotel-menu .menu-list:hover {
+  transform: translateY(-10px);
+}
+
+.hotel-menu .menu-list:hover {
+  background-color: #333;
+  border-radius: 15px;
+}
+
+.card:hover {
+  color: #fff;
+}
+.Hotel-search {
+  background: rgba(255, 254, 254, 0.463);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+  position: relative;
+  bottom: 20px;
+  z-index: 0;
+}
+
+.hotel-from {
+  display: flex;
+}
+
+.Hotel-search form .hotel-right {
+  padding: 15px 0;
+  display: flex;
+  margin: auto;
+}
+
+.hotel-location-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hotel-qty-card {
+  background-color: white;
+  position: absolute;
+  top: 20px;
+  width: 12rem;
+  height: 10rem;
+  z-index: 101;
+  padding: 1rem 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.hotel-qty-card button:hover {
+  background-color: red;
+  color: white;
+}
+
+/* media screen */
+
+@media only screen and (max-width: 320px) {
+  .hotel-header {
+    height: 35rem !important;
+  }
+
+  .Hotel-search {
+    height: 30rem !important;
+  }
+
+  .hotel-qty-card {
+    height: 12rem;
+  }
+
+  .hotel-menu {
+    margin-right: 30px;
+  }
+  .hotel-menu :link:nth-child(4),
+  .hotel-menu :link:nth-child(5),
+  .hotel-menu :link:nth-child(6),
+  .hotel-menu :link:nth-child(8) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .hotel-header {
+    height: 35rem !important;
+  }
+
+  .Hotel-search {
+    height: 21rem !important;
+  }
+  .hotel-menu {
+    margin-right: 30px;
+  }
+
+  .hotel-qty-card {
+    height: 12rem;
+  }
+  .hotel-menu :link:nth-child(4),
+  .hotel-menu :link:nth-child(5),
+  .hotel-menu :link:nth-child(6),
+  .hotel-menu :link:nth-child(8) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .hotel-header {
+    height: 30rem;
+  }
+
+  .hotel-qty-card {
+    height: 12rem;
+  }
+
+  .hotel-menu {
+    gap: 3.3rem;
+    display: flex;
+  }
+  .hotel-menu :link:nth-child(5),
+  .hotel-menu :link:nth-child(6),
+  .hotel-menu :link:nth-child(8) {
+    display: none;
+  }
+}

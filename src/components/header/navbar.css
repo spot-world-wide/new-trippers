@@ -1,0 +1,91 @@
+.swipe-nav-hidden {
+  display: none;
+}
+
+.swipe-nav {
+  display: flex;
+  background-image: linear-gradient(
+    to right top,
+    #211a29,
+    #1e1a29,
+    #1b1a29,
+    #181928,
+    #151928,
+    #131c2b,
+    #111f2e,
+    #0e2230,
+    #0d2935,
+    #0e3139,
+    #14383b,
+    #1c3f3d
+  );
+  color: white;
+  width: 100%;
+  height: 60px;
+  gap: 2rem;
+  padding: 0px 20px;
+  position: fixed;
+  top: 0;
+  z-index: 101;
+  opacity: 0;
+  animation: fade-in 0.5s ease forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    top: -60px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.swipe-nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.swipe-nav-menu:hover {
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.swipe-nav-login {
+  display: flex;
+}
+
+.swipe-nav-logo-img {
+  width: 60px;
+}
+
+.swipe-menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.swipe-menu-icon p {
+  color: white;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+  .swipe-nav {
+    display: none;
+  }
+}
